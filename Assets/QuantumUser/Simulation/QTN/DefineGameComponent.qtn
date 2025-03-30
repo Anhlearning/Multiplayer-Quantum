@@ -1,0 +1,10 @@
+input{
+    FPVector2 Direction;
+}
+
+component PlayerInfo{
+    player_ref playerRef;
+    FP Damage;
+    FP Health;
+    FP speed;
+}

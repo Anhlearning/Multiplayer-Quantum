@@ -1,0 +1,12 @@
+-Part 1 : 
++ Download , install ,.. .
++ ECS simulation vs view script Unity
++ Entity prototype 
++ QUANTUM DSL 
++ System 
++ Player and Input 
++ testing online 
++ Overview of config settings 
++ assets 
++ view framework 
++ Animations 
