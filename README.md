@@ -38,7 +38,7 @@ Client/
 
 Clone repository về máy:
 
-git clone https://github.com/username/Multiplayer-with-Riptide-Client.git
+git clone https://github.com/Anhlearning/Multiplayer-Quantum.git
 
 Mở dự án bằng Unity 2023.
 
