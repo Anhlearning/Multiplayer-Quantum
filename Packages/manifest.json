@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.amazonaws.gamelift": "file:C:/Users/ASUS/Downloads/amazon-gamelift-plugin-unity-release-3.0.1/com.amazonaws.gamelift-3.0.1.tgz",
+    "com.amazonaws.gameliftserver.sdk": "file:C:/Users/ASUS/Downloads/GameLift-CSharp-ServerSDK-UnityPlugin-5.2.0/com.amazonaws.gameliftserver.sdk-5.2.0.tgz",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.unity.cinemachine": "2.10.3",
     "com.unity.collab-proxy": "2.7.1",
@@ -46,5 +48,14 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Unity NuGet",
+      "url": "https://unitynuget-registry.openupm.com",
+      "scopes": [
+        "org.nuget"
+      ]
+    }
+  ]
 }

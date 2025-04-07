@@ -35,8 +35,8 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate() {
         SendInput();
-
-         for (int i = 0; i < inputs.Length; i++)
+        Debug.Log(camForward.right);
+        for (int i = 0; i < inputs.Length; i++)
             inputs[i] = false;
     }
     private void SendInput(){

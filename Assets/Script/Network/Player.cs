@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private string username;
     [SerializeField] private Transform camFollow;
     [SerializeField] private Transform camFowrad;
-    
+    [SerializeField] private float rotateSpeed=50f;
     [SerializeField] private CinemachineFreeLook cinemachineFreeLook;
    
 
@@ -55,12 +55,20 @@ public class Player : MonoBehaviour
     }
 
     public void Move(Vector3 newPos){
+        Vector3 moveDir=newPos- transform.position;
         transform.position = newPos;
 
+        if(moveDir.magnitude != 0){
+            HandleRotation(moveDir);
+        }
         if(!IsLocal){
             // camFowrad.forward=Camfoward;
         }
 
+    }
+    public void HandleRotation(Vector3 moveDir){
+        Quaternion targetRotaion=Quaternion.LookRotation(moveDir);
+        transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotaion,rotateSpeed *  Time.deltaTime);
     }
     [MessageHandler((ushort)ServerToClientId.playerSpawned)]
     private static void SpawnPlayer(Message message)
